@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Profile</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="CreateProfile">
+    <h1>Profile Details</h1>
+    <div class="profile-preview-container">
+      <div class="image-container">
+        <img id="profilePicturePreview" src="/img/default-profile.jpg" alt="Profile Preview">
+        <div class="circle"></div>
+      </div>
+      <label class="picture" for="picture__input" tabIndex="0">
+        <span class="picture__image"></span>
+      </label>
+      
+      <input type="file" name="picture__input" id="picture__input">
+    </div>
+
+    <form id="profileForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+      <label for="birthday">Choose Birthday Date:</label>
+      <input type="date" id="birthday" name="birthday" required>
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+  
+  <script src="./js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* styles.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'FK Modernist', sans-serif;
+  background-color: #125412;
+}
+
+.CreateAccount,
+.RegisterAccount,
+.LoginAccount,
+.CreateProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 812px;
+  background-color: white;
+  padding-top: 50px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.image-container img.active {
+  display: block;
+}
+
+.Algorithm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Algorithm {
+  color: #E94057;
+  margin-bottom: 10px;
+}
+
+.Desc {
+  margin: 0 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.indicator-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #E94057;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.createanaccountbutton,
+button[type="submit"] {
+  width: 295px;
+  height: 56px;
+  background-color: #E94057;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.createanaccountbutton:hover,
+button[type="submit"]:hover {
+  background-color: #d6384f;
+}
+
+.signin-link,
+.register-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.signin-link p,
+.register-link p {
+  margin-top: 20px;
+}
+
+.signin-link a,
+.register-link a {
+  color: #E94057;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signin-link a:hover,
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+label {
+  align-self: flex-start;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+h1 {
+  color: #E94057;
+  margin-bottom: 20px;
+}
+
+.form-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'FK Modernist', sans-serif;
+  background-color: #125412;
+}
+
+.CreateProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 375px;
+  height: 812px;
+}
+
+h1 {
+  color: #E94057;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+label {
+  align-self: flex-start;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#picture__input {
+  display: none;
+}
+
+.picture {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 16/9;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border: 2px dashed currentcolor;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.picture:hover {
+  color: #777;
+  background: #ccc;
+}
+
+.picture:active {
+  border-color: turquoise;
+  color: turquoise;
+  background: #eee;
+}
+
+.picture:focus {
+  color: #777;
+  background: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+  max-width: 100%;
+}
