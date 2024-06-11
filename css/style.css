@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
   display: flex;
   justify-content: center;
@@ -13,7 +11,8 @@ body {
 .CreateAccount,
 .RegisterAccount,
 .LoginAccount,
-.CreateProfile {
+.CreateProfile,
+.Dashboard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +23,16 @@ body {
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+}
+
+h1 {
+  color: #E94057;
+  margin-bottom: 20px;
+}
+
+.form-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
 }
 
 .image-container {
@@ -54,6 +63,7 @@ body {
 .Algorithm {
   color: #E94057;
   margin-bottom: 10px;
+  align-self: center;
 }
 
 .Desc {
@@ -97,6 +107,7 @@ button[type="submit"] {
   cursor: pointer;
   border-radius: 15px;
   transition: background-color 0.3s;
+  align-self: center;
 }
 
 .createanaccountbutton:hover,
@@ -152,62 +163,8 @@ input[type="password"] {
   font-size: 16px;
 }
 
-h1 {
-  color: #E94057;
-  margin-bottom: 20px;
-}
-
-.form-logo {
-  max-width: 150px;
-  margin-bottom: 20px;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: 'FK Modernist', sans-serif;
-  background-color: #125412;
-}
-
-.CreateProfile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 375px;
-  height: 812px;
-}
-
-h1 {
-  color: #E94057;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 0 20px;
-}
-
-label {
-  align-self: flex-start;
-  margin-bottom: 5px;
-  margin-left: 15px;
-  color: #333;
-}
-
 input[type="text"],
 input[type="date"],
-input[type="email"],
-input[type="password"],
 input[type="file"] {
   width: calc(100% - 20px);
   padding: 10px;
@@ -257,3 +214,153 @@ input[type="file"] {
 .picture__img {
   max-width: 100%;
 }
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 812px;
+  background-color: white;
+  padding-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+
+
+h1 {
+  color: black; /* Cor preta para o título */
+  align-self: flex-start; /* Alinha o título à esquerda */
+  margin-left: 20px; /* Espaço da margem esquerda */
+  margin-bottom: 20px;
+}
+
+.gender-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+  flex: 1;
+}
+
+.gender-button {
+  width: 295px;
+  height: 56px;
+  background-color: white; /* Fundo branco */
+  color: black;
+  font-size: 16px;
+  border: 2px solid #ccc; /* Borda cinza */
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 10px 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.gender-button:hover {
+  background-color: #E94057; /* Fundo rosa ao passar o mouse */
+  color: white; /* Texto branco ao passar o mouse */
+}
+
+.gender-button.selected {
+  background-color: #E94057; /* Fundo rosa ao ser clicado */
+  color: white; /* Texto branco ao ser clicado */
+}
+
+.save-button {
+  width: 295px;
+  height: 56px;
+  background-color: #E94057;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 30px 0 80px 0; /* Adiciona espaço acima e abaixo do botão Save */
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #d6384f;
+}
+
+.Interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  height: 812px;
+  background-color: white;
+  padding-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+span {
+  font-size: 14px;
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: -20px;
+  color: #000000B2;
+}
+
+.interests-selection {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.interests-column {
+  padding-left: 20px;
+  width: 50%; /* Cada coluna ocupa metade do espaço */
+}
+
+.interest-button {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px; /* Ajusta o padding para alinhar o conteúdo */
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.interest-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.interest-button.selected {
+  background-color: #ee6477; /* Fundo rosa ao ser clicado */
+  border-color: #E94057; /* Borda rosa ao ser clicado */
+  color: white; /* Texto branco ao ser clicado */
+}
+
+.save-button {
+  width: 295px;
+  height: 56px;
+  background-color: #E94057;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 30px;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #d6384f;
+}
+

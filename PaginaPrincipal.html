@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="MainDashboard">
+    <h1>Welcome to your Dashboard!</h1>
+    <p>You can now discover and like other people.</p>
+
+    <!-- Discover section -->
+    <div class="section" id="discoverSection">
+      <h2>Discover new people</h2>
+      <div id="discoverContainer">
+        <div class="person-card">
+          <img src="/img/person1.jpg" alt="Person 1">
+          <h3>Person 1</h3>
+          <div class="button-container">
+            <button class="like-button">Like</button>
+            <button class="dislike-button">Dislike</button>
+          </div>
+        </div>
+        <div class="person-card">
+          <img src="/img/person2.jpg" alt="Person 2">
+          <h3>Person 2</h3>
+          <div class="button-container">
+            <button class="like-button">Like</button>
+            <button class="dislike-button">Dislike</button>
+          </div>
+        </div>
+        <div class="person-card">
+          <img src="/img/person3.jpg" alt="Person 3">
+          <h3>Person 3</h3>
+          <div class="button-container">
+            <button class="like-button">Like</button>
+            <button class="dislike-button">Dislike</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Likes section -->
+    <div class="section" id="likesSection" style="display: none;">
+      <h2>People who liked you</h2>
+      <div id="likesContainer">
+        <!-- Likes content will be dynamically generated here -->
+      </div>
+    </div>
+
+    <!-- Profile section -->
+    <div class="section" id="profileSection" style="display: none;">
+      <h2>Your Profile</h2>
+      <div id="profileDetails">
+        <!-- Profile details will be dynamically generated here -->
+      </div>
+    </div>
+
+    <!-- Menu section -->
+    <div class="menu-section">
+      <h2>Menu</h2>
+      <nav>
+        <ul>
+          <li><a href="#" class="menu-link" data-section="discoverSection">Discover</a></li>
+          <li><a href="#" class="menu-link" data-section="likesSection">Likes</a></li>
+          <li><a href="#" class="menu-link" data-section="profileSection">My Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script src="./js/PaginaPrincipal.js"></script>
+</body>
+</html>
