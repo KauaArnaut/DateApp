@@ -1,36 +1,33 @@
 document.addEventListener('DOMContentLoaded', function() {
-  
-   const profilePictureInput = document.getElementById('profilePictureInput');
+  const profilePictureInput = document.getElementById('picture__input');
   const inputFile = document.querySelector("#picture__input");
   const pictureImage = document.querySelector(".picture__image");
   const pictureImageTxt = "Choose an image";
   pictureImage.innerHTML = pictureImageTxt;
 
-inputFile.addEventListener("change", function (e) {
-  const inputTarget = e.target;
-  const file = inputTarget.files[0];
+  inputFile.addEventListener("change", function (e) {
+    const inputTarget = e.target;
+    const file = inputTarget.files[0];
 
-  if (file) {
-    const reader = new FileReader();
+    if (file) {
+      const reader = new FileReader();
 
-    reader.addEventListener("load", function (e) {
-      const readerTarget = e.target;
+      reader.addEventListener("load", function (e) {
+        const readerTarget = e.target;
 
-      const img = document.createElement("img");
-      img.src = readerTarget.result;
-      img.classList.add("picture__img");
+        const img = document.createElement("img");
+        img.src = readerTarget.result;
+        img.classList.add("picture__img");
 
-      pictureImage.innerHTML = "";
-      pictureImage.appendChild(img);
-    });
+        pictureImage.innerHTML = "";
+        pictureImage.appendChild(img);
+      });
 
-    reader.readAsDataURL(file);
-  } else {
-    pictureImage.innerHTML = pictureImageTxt;
-  }
-});
-
-    
+      reader.readAsDataURL(file);
+    } else {
+      pictureImage.innerHTML = pictureImageTxt;
+    }
+  });
 
   document.getElementById('profileForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -64,7 +61,7 @@ inputFile.addEventListener("change", function (e) {
 
       localStorage.setItem(email + '_profile', JSON.stringify(userProfile));
       alert('Profile created successfully!');
-      window.location.href = 'dashboard.html';
+      window.location.href = 'PaginaPrincipal.html';
     };
 
     reader.readAsDataURL(profilePicture);

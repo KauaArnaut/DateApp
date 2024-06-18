@@ -12,7 +12,8 @@ body {
 .RegisterAccount,
 .LoginAccount,
 .CreateProfile,
-.Dashboard {
+.Dashboard,
+.MainDashboard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,3 +365,88 @@ span {
   background-color: #d6384f;
 }
 
+
+.MainDashboard {
+  width: 375px;
+  height: 812px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section h1 {
+  text-align: center;
+  margin-top: -150px;
+  height: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-button {
+  width: 60px; /* Tamanho total do botão */
+  height: 60px;
+  border-radius: 50%; /* Para criar uma borda redonda */
+  border: 2px solid #E94057; /* Cor rosa */
+  background-color: #E94057; /* Cor de fundo do círculo */
+  margin: 10px; /* Margem entre os botões */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-button img {
+  width: 24px; /* Tamanho da imagem */
+  height: 24px;
+  vertical-align: middle; /* Alinhamento vertical */
+}
+
+.dislike-button,
+.superlike-button {
+  width: 40px; /* Tamanho total do botão */
+  height: 40px;
+  border-radius: 50%; /* Para criar uma borda redonda */
+  background-color: transparent; /* Sem cor de fundo */
+  margin: 10px; /* Margem entre os botões */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dislike-button img,
+.superlike-button img {
+  width: 24px; /* Tamanho da imagem */
+  height: 24px;
+  vertical-align: middle; /* Alinhamento vertical */
+}
+
+.menu-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Espaço uniforme entre os itens */
+  align-items: flex-end; /* Alinha os itens no final do contêiner */
+  padding: 10px 0; /* Espaçamento interno */
+  position: absolute;
+  bottom: 0;
+}
+
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-link img {
+  width: 24px; /* Tamanho da imagem */
+  height: 24px;
+  margin-bottom: 30px; /* Espaçamento entre a imagem e o texto */
+  vertical-align: middle; /* Alinhamento vertical */
+}
