@@ -1,5 +1,3 @@
-// register.js
-
 document.getElementById('registerForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
@@ -15,7 +13,8 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
   } else {
     existingUsers.push({ email, password });
     localStorage.setItem('users', JSON.stringify(existingUsers));
-    alert('Account created successfully!');
-    window.location.href = 'login.html';
+    alert('Conta criada com sucesso!');
+    localStorage.setItem('loggedInUser', email);
+    window.location.href = 'profile.html';
   }
 });

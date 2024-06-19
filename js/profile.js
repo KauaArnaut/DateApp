@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
       };
 
       localStorage.setItem(email + '_profile', JSON.stringify(userProfile));
-      alert('Profile created successfully!');
-      window.location.href = 'PaginaPrincipal.html';
+      alert('Perfil criado com sucesso!');
+      window.location.href = 'dashboard.html'; 
     };
 
     reader.readAsDataURL(profilePicture);

@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let userProfile = JSON.parse(localStorage.getItem(email + '_profile')) || {};
     userProfile.interests = selectedInterests;
     localStorage.setItem(email + '_profile', JSON.stringify(userProfile));
-    alert('Interests saved successfully!');
+    alert('Intereses salvos com sucesso!');
 
-    // Redirect to dashboard.html
+    // Redirect to PaginaPrincipal
     window.location.href = 'PaginaPrincipal.html';
   });
 });

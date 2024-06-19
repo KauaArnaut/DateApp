@@ -30,5 +30,5 @@ class PaginaPrincipal {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const PaginaPrincipal = new PaginaPrincipal();
+  const paginaPrincipal = new PaginaPrincipal();
 });

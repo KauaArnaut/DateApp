@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let userProfile = JSON.parse(localStorage.getItem(email + '_profile')) || {};
     userProfile.gender = selectedGender;
     localStorage.setItem(email + '_profile', JSON.stringify(userProfile));
-    alert('Gender saved successfully!');
+    alert('Genero salvo com sucesso!');
 
     // Redirect to interests.html
     window.location.href = 'interests.html';

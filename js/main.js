@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   const createAccountButton = document.querySelector('.createanaccountbutton');
   createAccountButton.addEventListener('click', () => {

@@ -9,11 +9,15 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
   if (user) {
     localStorage.setItem('loggedInUser', email);
-    const userProfile = localStorage.getItem(email + '_profile');
+    const userProfile = JSON.parse(localStorage.getItem(email + '_profile'));
     
     if (userProfile) {
       alert('Login successful!');
-      window.location.href = 'dashboard.html';
+      if (userProfile.gender && userProfile.interests) {
+        window.location.href = 'PaginaPrincipal.html';
+      } else {
+        window.location.href = 'dashboard.html';
+      }
     } else {
       alert('Login successful! Please create your profile.');
       window.location.href = 'profile.html';
@@ -21,7 +25,4 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   } else {
     alert('Invalid email or password.');
   }
-
-  
-
 });
